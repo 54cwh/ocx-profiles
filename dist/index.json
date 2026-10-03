@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "deploy",
+      "type": "profile",
+      "description": "Linux server operations profile: ssh MCP, Docker, systemd, firewall, backups, cron, plus a no-rm guard plugin. Secrets are read from env vars (ARK_API_KEY, TAVILY_API_KEY, DEEPSEEK_API_KEY, CONTEXT7_API_KEY)."
+    }
+  ]
+}

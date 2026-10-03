@@ -1,0 +1,8 @@
+{
+  "name": "ocx-profiles-registry",
+  "private": true,
+  "scripts": {
+    "build": "ocx build . --out dist && touch dist/.nojekyll",
+    "deploy": "bun run build"
+  }
+}
