@@ -1,0 +1,1398 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "general",
+      "type": "profile",
+      "description": "General office / document-productivity profile: docx/pptx/xlsx/pdf/latex2word, Obsidian, Chinese writing polish, visual design, skill management. Secrets from env vars.",
+      "files": [
+        {
+          "path": "profiles/general/AGENTS.md",
+          "target": "AGENTS.md"
+        },
+        {
+          "path": "profiles/general/cli.json",
+          "target": "cli.json"
+        },
+        {
+          "path": "profiles/general/ocx.jsonc",
+          "target": "ocx.jsonc"
+        },
+        {
+          "path": "profiles/general/opencode.jsonc",
+          "target": "opencode.jsonc"
+        },
+        {
+          "path": "profiles/general/plugins/no-rm.ts",
+          "target": "plugins/no-rm.ts"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/.gitignore",
+          "target": "skills/Humanizer-zh/.gitignore"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/CHANGELOG.md",
+          "target": "skills/Humanizer-zh/CHANGELOG.md"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/LICENSE",
+          "target": "skills/Humanizer-zh/LICENSE"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/README.md",
+          "target": "skills/Humanizer-zh/README.md"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/SKILL.md",
+          "target": "skills/Humanizer-zh/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/tests/README.md",
+          "target": "skills/Humanizer-zh/tests/README.md"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/tests/check_structure.py",
+          "target": "skills/Humanizer-zh/tests/check_structure.py"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/tests/fixtures/cases.json",
+          "target": "skills/Humanizer-zh/tests/fixtures/cases.json"
+        },
+        {
+          "path": "profiles/general/skills/Humanizer-zh/tests/fixtures/structure.md",
+          "target": "skills/Humanizer-zh/tests/fixtures/structure.md"
+        },
+        {
+          "path": "profiles/general/skills/algorithmic-art/LICENSE.txt",
+          "target": "skills/algorithmic-art/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/algorithmic-art/SKILL.md",
+          "target": "skills/algorithmic-art/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/algorithmic-art/templates/generator_template.js",
+          "target": "skills/algorithmic-art/templates/generator_template.js"
+        },
+        {
+          "path": "profiles/general/skills/algorithmic-art/templates/viewer.html",
+          "target": "skills/algorithmic-art/templates/viewer.html"
+        },
+        {
+          "path": "profiles/general/skills/brand-guidelines/LICENSE.txt",
+          "target": "skills/brand-guidelines/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/brand-guidelines/SKILL.md",
+          "target": "skills/brand-guidelines/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/LICENSE.txt",
+          "target": "skills/canvas-design/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/SKILL.md",
+          "target": "skills/canvas-design/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/ArsenalSC-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/ArsenalSC-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BigShoulders-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/BigShoulders-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/BigShoulders-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BigShoulders-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/BigShoulders-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Boldonse-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Boldonse-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Boldonse-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Boldonse-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BricolageGrotesque-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/BricolageGrotesque-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/BricolageGrotesque-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/BricolageGrotesque-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/CrimsonPro-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/CrimsonPro-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/CrimsonPro-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/CrimsonPro-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/CrimsonPro-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/CrimsonPro-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/CrimsonPro-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/DMMono-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/DMMono-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/DMMono-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/DMMono-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/EricaOne-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/EricaOne-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/EricaOne-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/EricaOne-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/GeistMono-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/GeistMono-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/GeistMono-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/GeistMono-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/GeistMono-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/GeistMono-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Gloock-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Gloock-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Gloock-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Gloock-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexMono-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexMono-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexMono-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexMono-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexMono-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexSerif-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexSerif-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexSerif-BoldItalic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexSerif-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexSerif-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/IBMPlexSerif-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/IBMPlexSerif-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSans-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSans-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSans-BoldItalic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSans-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSans-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSans-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSans-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSans-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSerif-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSerif-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/InstrumentSerif-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/InstrumentSerif-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Italiana-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Italiana-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Italiana-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Italiana-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/JetBrainsMono-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/JetBrainsMono-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/JetBrainsMono-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/JetBrainsMono-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/JetBrainsMono-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/JetBrainsMono-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Jura-Light.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Jura-Light.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Jura-Medium.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Jura-Medium.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Jura-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Jura-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/LibreBaskerville-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/LibreBaskerville-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/LibreBaskerville-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Lora-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Lora-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Lora-BoldItalic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Lora-BoldItalic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Lora-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Lora-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Lora-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Lora-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Lora-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Lora-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/NationalPark-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/NationalPark-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/NationalPark-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/NationalPark-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/NationalPark-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/NationalPark-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/NothingYouCouldDo-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Outfit-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Outfit-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Outfit-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Outfit-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Outfit-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Outfit-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/PixelifySans-Medium.ttf",
+          "target": "skills/canvas-design/canvas-fonts/PixelifySans-Medium.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/PixelifySans-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/PixelifySans-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/PoiretOne-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/PoiretOne-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/PoiretOne-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/PoiretOne-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/RedHatMono-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/RedHatMono-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/RedHatMono-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/RedHatMono-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/RedHatMono-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/RedHatMono-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Silkscreen-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Silkscreen-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Silkscreen-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Silkscreen-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/SmoochSans-Medium.ttf",
+          "target": "skills/canvas-design/canvas-fonts/SmoochSans-Medium.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/SmoochSans-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/SmoochSans-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Tektur-Medium.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Tektur-Medium.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Tektur-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/Tektur-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/Tektur-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/Tektur-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/WorkSans-Bold.ttf",
+          "target": "skills/canvas-design/canvas-fonts/WorkSans-Bold.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/WorkSans-BoldItalic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/WorkSans-BoldItalic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/WorkSans-Italic.ttf",
+          "target": "skills/canvas-design/canvas-fonts/WorkSans-Italic.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/WorkSans-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/WorkSans-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/WorkSans-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/WorkSans-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/YoungSerif-OFL.txt",
+          "target": "skills/canvas-design/canvas-fonts/YoungSerif-OFL.txt"
+        },
+        {
+          "path": "profiles/general/skills/canvas-design/canvas-fonts/YoungSerif-Regular.ttf",
+          "target": "skills/canvas-design/canvas-fonts/YoungSerif-Regular.ttf"
+        },
+        {
+          "path": "profiles/general/skills/doc-coauthoring/SKILL.md",
+          "target": "skills/doc-coauthoring/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/docx/LICENSE.txt",
+          "target": "skills/docx/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/docx/SKILL.md",
+          "target": "skills/docx/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/__init__.py",
+          "target": "skills/docx/scripts/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/accept_changes.py",
+          "target": "skills/docx/scripts/accept_changes.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/comment.py",
+          "target": "skills/docx/scripts/comment.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/merge_runs.py",
+          "target": "skills/docx/scripts/merge_runs.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/helpers/__init__.py",
+          "target": "skills/docx/scripts/office/helpers/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/helpers/pptx_chart.py",
+          "target": "skills/docx/scripts/office/helpers/pptx_chart.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/helpers/pptx_slide.py",
+          "target": "skills/docx/scripts/office/helpers/pptx_slide.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/helpers/pptx_theme.py",
+          "target": "skills/docx/scripts/office/helpers/pptx_theme.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "target": "skills/docx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "target": "skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "target": "skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "target": "skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "target": "skills/docx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/mce/mc.xsd",
+          "target": "skills/docx/scripts/office/schemas/mce/mc.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-2010.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-2010.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-2012.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-2012.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-2018.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-cex-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-cid-2016.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "target": "skills/docx/scripts/office/schemas/microsoft/wml-symex-2015.xsd"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/soffice.py",
+          "target": "skills/docx/scripts/office/soffice.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validate.py",
+          "target": "skills/docx/scripts/office/validate.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validators/__init__.py",
+          "target": "skills/docx/scripts/office/validators/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validators/base.py",
+          "target": "skills/docx/scripts/office/validators/base.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validators/docx.py",
+          "target": "skills/docx/scripts/office/validators/docx.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validators/pptx.py",
+          "target": "skills/docx/scripts/office/validators/pptx.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/office/validators/redlining.py",
+          "target": "skills/docx/scripts/office/validators/redlining.py"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/templates/comments.xml",
+          "target": "skills/docx/scripts/templates/comments.xml"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/templates/commentsExtended.xml",
+          "target": "skills/docx/scripts/templates/commentsExtended.xml"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/templates/commentsExtensible.xml",
+          "target": "skills/docx/scripts/templates/commentsExtensible.xml"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/templates/commentsIds.xml",
+          "target": "skills/docx/scripts/templates/commentsIds.xml"
+        },
+        {
+          "path": "profiles/general/skills/docx/scripts/templates/people.xml",
+          "target": "skills/docx/scripts/templates/people.xml"
+        },
+        {
+          "path": "profiles/general/skills/find-skills/SKILL.md",
+          "target": "skills/find-skills/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/json-canvas/SKILL.md",
+          "target": "skills/json-canvas/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/json-canvas/references/EXAMPLES.md",
+          "target": "skills/json-canvas/references/EXAMPLES.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-bases/SKILL.md",
+          "target": "skills/obsidian-bases/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+          "target": "skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-cli/SKILL.md",
+          "target": "skills/obsidian-cli/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-markdown/SKILL.md",
+          "target": "skills/obsidian-markdown/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-markdown/references/CALLOUTS.md",
+          "target": "skills/obsidian-markdown/references/CALLOUTS.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-markdown/references/EMBEDS.md",
+          "target": "skills/obsidian-markdown/references/EMBEDS.md"
+        },
+        {
+          "path": "profiles/general/skills/obsidian-markdown/references/PROPERTIES.md",
+          "target": "skills/obsidian-markdown/references/PROPERTIES.md"
+        },
+        {
+          "path": "profiles/general/skills/pdf/LICENSE.txt",
+          "target": "skills/pdf/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/pdf/SKILL.md",
+          "target": "skills/pdf/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/pdf/forms.md",
+          "target": "skills/pdf/forms.md"
+        },
+        {
+          "path": "profiles/general/skills/pdf/reference.md",
+          "target": "skills/pdf/reference.md"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/check_bounding_boxes.py",
+          "target": "skills/pdf/scripts/check_bounding_boxes.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/check_fillable_fields.py",
+          "target": "skills/pdf/scripts/check_fillable_fields.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/convert_pdf_to_images.py",
+          "target": "skills/pdf/scripts/convert_pdf_to_images.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/create_validation_image.py",
+          "target": "skills/pdf/scripts/create_validation_image.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/extract_form_field_info.py",
+          "target": "skills/pdf/scripts/extract_form_field_info.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/extract_form_structure.py",
+          "target": "skills/pdf/scripts/extract_form_structure.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/fill_fillable_fields.py",
+          "target": "skills/pdf/scripts/fill_fillable_fields.py"
+        },
+        {
+          "path": "profiles/general/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+          "target": "skills/pdf/scripts/fill_pdf_form_with_annotations.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/SKILL.md",
+          "target": "skills/ppt-visual-replica/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/agents/openai.yaml",
+          "target": "skills/ppt-visual-replica/agents/openai.yaml"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/references/asset-review.md",
+          "target": "skills/ppt-visual-replica/references/asset-review.md"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/references/reference-reconstruction.md",
+          "target": "skills/ppt-visual-replica/references/reference-reconstruction.md"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/references/scientific-presentations.md",
+          "target": "skills/ppt-visual-replica/references/scientific-presentations.md"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/references/strict-asset-workflow.md",
+          "target": "skills/ppt-visual-replica/references/strict-asset-workflow.md"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/align_from_redboxes.py",
+          "target": "skills/ppt-visual-replica/scripts/align_from_redboxes.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/asset_review.py",
+          "target": "skills/ppt-visual-replica/scripts/asset_review.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/audit_skill.py",
+          "target": "skills/ppt-visual-replica/scripts/audit_skill.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/balance_text_lines.py",
+          "target": "skills/ppt-visual-replica/scripts/balance_text_lines.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/build_pptx.py",
+          "target": "skills/ppt-visual-replica/scripts/build_pptx.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/crop_reference.py",
+          "target": "skills/ppt-visual-replica/scripts/crop_reference.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/generate_prompt_pack.py",
+          "target": "skills/ppt-visual-replica/scripts/generate_prompt_pack.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/grid_cut.py",
+          "target": "skills/ppt-visual-replica/scripts/grid_cut.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/subtract_assets.py",
+          "target": "skills/ppt-visual-replica/scripts/subtract_assets.py"
+        },
+        {
+          "path": "profiles/general/skills/ppt-visual-replica/scripts/validate_delivery.py",
+          "target": "skills/ppt-visual-replica/scripts/validate_delivery.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/LICENSE.txt",
+          "target": "skills/pptx/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/pptx/SKILL.md",
+          "target": "skills/pptx/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/__init__.py",
+          "target": "skills/pptx/scripts/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/add_slide.py",
+          "target": "skills/pptx/scripts/add_slide.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/clean.py",
+          "target": "skills/pptx/scripts/clean.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/helpers/__init__.py",
+          "target": "skills/pptx/scripts/office/helpers/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/helpers/pptx_chart.py",
+          "target": "skills/pptx/scripts/office/helpers/pptx_chart.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/helpers/pptx_slide.py",
+          "target": "skills/pptx/scripts/office/helpers/pptx_slide.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/helpers/pptx_theme.py",
+          "target": "skills/pptx/scripts/office/helpers/pptx_theme.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "target": "skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/mce/mc.xsd",
+          "target": "skills/pptx/scripts/office/schemas/mce/mc.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "target": "skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/soffice.py",
+          "target": "skills/pptx/scripts/office/soffice.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validate.py",
+          "target": "skills/pptx/scripts/office/validate.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validators/__init__.py",
+          "target": "skills/pptx/scripts/office/validators/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validators/base.py",
+          "target": "skills/pptx/scripts/office/validators/base.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validators/docx.py",
+          "target": "skills/pptx/scripts/office/validators/docx.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validators/pptx.py",
+          "target": "skills/pptx/scripts/office/validators/pptx.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/office/validators/redlining.py",
+          "target": "skills/pptx/scripts/office/validators/redlining.py"
+        },
+        {
+          "path": "profiles/general/skills/pptx/scripts/thumbnail.py",
+          "target": "skills/pptx/scripts/thumbnail.py"
+        },
+        {
+          "path": "profiles/general/skills/siliconflow-image/README.md",
+          "target": "skills/siliconflow-image/README.md"
+        },
+        {
+          "path": "profiles/general/skills/siliconflow-image/SKILL.md",
+          "target": "skills/siliconflow-image/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/LICENSE.txt",
+          "target": "skills/skill-creator/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/SKILL.md",
+          "target": "skills/skill-creator/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/agents/analyzer.md",
+          "target": "skills/skill-creator/agents/analyzer.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/agents/comparator.md",
+          "target": "skills/skill-creator/agents/comparator.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/agents/grader.md",
+          "target": "skills/skill-creator/agents/grader.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/assets/eval_review.html",
+          "target": "skills/skill-creator/assets/eval_review.html"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/eval-viewer/generate_review.py",
+          "target": "skills/skill-creator/eval-viewer/generate_review.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/eval-viewer/viewer.html",
+          "target": "skills/skill-creator/eval-viewer/viewer.html"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/references/schemas.md",
+          "target": "skills/skill-creator/references/schemas.md"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/__init__.py",
+          "target": "skills/skill-creator/scripts/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/aggregate_benchmark.py",
+          "target": "skills/skill-creator/scripts/aggregate_benchmark.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/generate_report.py",
+          "target": "skills/skill-creator/scripts/generate_report.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/improve_description.py",
+          "target": "skills/skill-creator/scripts/improve_description.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/package_skill.py",
+          "target": "skills/skill-creator/scripts/package_skill.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/quick_validate.py",
+          "target": "skills/skill-creator/scripts/quick_validate.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/run_eval.py",
+          "target": "skills/skill-creator/scripts/run_eval.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/run_loop.py",
+          "target": "skills/skill-creator/scripts/run_loop.py"
+        },
+        {
+          "path": "profiles/general/skills/skill-creator/scripts/utils.py",
+          "target": "skills/skill-creator/scripts/utils.py"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/LICENSE.txt",
+          "target": "skills/theme-factory/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/SKILL.md",
+          "target": "skills/theme-factory/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/theme-showcase.pdf",
+          "target": "skills/theme-factory/theme-showcase.pdf"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/arctic-frost.md",
+          "target": "skills/theme-factory/themes/arctic-frost.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/botanical-garden.md",
+          "target": "skills/theme-factory/themes/botanical-garden.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/desert-rose.md",
+          "target": "skills/theme-factory/themes/desert-rose.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/forest-canopy.md",
+          "target": "skills/theme-factory/themes/forest-canopy.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/golden-hour.md",
+          "target": "skills/theme-factory/themes/golden-hour.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/midnight-galaxy.md",
+          "target": "skills/theme-factory/themes/midnight-galaxy.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/modern-minimalist.md",
+          "target": "skills/theme-factory/themes/modern-minimalist.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/ocean-depths.md",
+          "target": "skills/theme-factory/themes/ocean-depths.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/sunset-boulevard.md",
+          "target": "skills/theme-factory/themes/sunset-boulevard.md"
+        },
+        {
+          "path": "profiles/general/skills/theme-factory/themes/tech-innovation.md",
+          "target": "skills/theme-factory/themes/tech-innovation.md"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/LICENSE.txt",
+          "target": "skills/xlsx/LICENSE.txt"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/SKILL.md",
+          "target": "skills/xlsx/SKILL.md"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/helpers/__init__.py",
+          "target": "skills/xlsx/scripts/office/helpers/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/helpers/pptx_chart.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_chart.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/helpers/pptx_slide.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_slide.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/helpers/pptx_theme.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_theme.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/mce/mc.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/mce/mc.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-2010.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2010.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-2012.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2012.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-2018.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-cex-2018.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-cid-2016.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-symex-2015.xsd"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/soffice.py",
+          "target": "skills/xlsx/scripts/office/soffice.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validate.py",
+          "target": "skills/xlsx/scripts/office/validate.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validators/__init__.py",
+          "target": "skills/xlsx/scripts/office/validators/__init__.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validators/base.py",
+          "target": "skills/xlsx/scripts/office/validators/base.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validators/docx.py",
+          "target": "skills/xlsx/scripts/office/validators/docx.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validators/pptx.py",
+          "target": "skills/xlsx/scripts/office/validators/pptx.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/office/validators/redlining.py",
+          "target": "skills/xlsx/scripts/office/validators/redlining.py"
+        },
+        {
+          "path": "profiles/general/skills/xlsx/scripts/recalc.py",
+          "target": "skills/xlsx/scripts/recalc.py"
+        }
+      ],
+      "dependencies": []
+    }
+  ]
+}

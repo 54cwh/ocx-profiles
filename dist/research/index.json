@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "research",
+      "type": "profile",
+      "description": "Research / math-modeling profile: literature search & review, paper reading/writing/polishing, citation verification, plus Stata(Wine)/OpenAlex/Zotero/MinerU MCP. MCP paths and secrets are placeholders/env vars; see INSTALL.zh.md."
+    }
+  ]
+}

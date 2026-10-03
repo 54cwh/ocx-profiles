@@ -1,0 +1,170 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "research",
+      "type": "profile",
+      "description": "Research / math-modeling profile: literature search & review, paper reading/writing/polishing, citation verification, plus Stata(Wine)/OpenAlex/Zotero/MinerU MCP. MCP paths and secrets are placeholders/env vars; see INSTALL.zh.md.",
+      "files": [
+        {
+          "path": "profiles/research/AGENTS.md",
+          "target": "AGENTS.md"
+        },
+        {
+          "path": "profiles/research/cli.json",
+          "target": "cli.json"
+        },
+        {
+          "path": "profiles/research/ocx.jsonc",
+          "target": "ocx.jsonc"
+        },
+        {
+          "path": "profiles/research/opencode.jsonc",
+          "target": "opencode.jsonc"
+        },
+        {
+          "path": "profiles/research/plugins/no-rm.ts",
+          "target": "plugins/no-rm.ts"
+        },
+        {
+          "path": "profiles/research/skills/humanizer-zh-academic/LICENSE",
+          "target": "skills/humanizer-zh-academic/LICENSE"
+        },
+        {
+          "path": "profiles/research/skills/humanizer-zh-academic/README.md",
+          "target": "skills/humanizer-zh-academic/README.md"
+        },
+        {
+          "path": "profiles/research/skills/humanizer-zh-academic/SKILL.md",
+          "target": "skills/humanizer-zh-academic/SKILL.md"
+        },
+        {
+          "path": "profiles/research/skills/humanizer-zh-academic/SKILL_full.md",
+          "target": "skills/humanizer-zh-academic/SKILL_full.md"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/.gitignore",
+          "target": "skills/latex2word/.gitignore"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/LICENSE.txt",
+          "target": "skills/latex2word/LICENSE.txt"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/README.md",
+          "target": "skills/latex2word/README.md"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/SKILL.md",
+          "target": "skills/latex2word/SKILL.md"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/package-lock.json",
+          "target": "skills/latex2word/package-lock.json"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/package.json",
+          "target": "skills/latex2word/package.json"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/inject-omml.py",
+          "target": "skills/latex2word/scripts/inject-omml.py"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latex2docx.js",
+          "target": "skills/latex2word/scripts/latex2docx.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/bib.js",
+          "target": "skills/latex2word/scripts/latexmlibs/bib.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/blocks.js",
+          "target": "skills/latex2word/scripts/latexmlibs/blocks.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/document.js",
+          "target": "skills/latex2word/scripts/latexmlibs/document.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/formulas.js",
+          "target": "skills/latex2word/scripts/latexmlibs/formulas.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/index.js",
+          "target": "skills/latex2word/scripts/latexmlibs/index.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/inline.js",
+          "target": "skills/latex2word/scripts/latexmlibs/inline.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/state.js",
+          "target": "skills/latex2word/scripts/latexmlibs/state.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/latexmlibs/utils.js",
+          "target": "skills/latex2word/scripts/latexmlibs/utils.js"
+        },
+        {
+          "path": "profiles/research/skills/latex2word/scripts/preprocess.js",
+          "target": "skills/latex2word/scripts/preprocess.js"
+        },
+        {
+          "path": "profiles/research/skills/pdf/LICENSE.txt",
+          "target": "skills/pdf/LICENSE.txt"
+        },
+        {
+          "path": "profiles/research/skills/pdf/SKILL.md",
+          "target": "skills/pdf/SKILL.md"
+        },
+        {
+          "path": "profiles/research/skills/pdf/forms.md",
+          "target": "skills/pdf/forms.md"
+        },
+        {
+          "path": "profiles/research/skills/pdf/reference.md",
+          "target": "skills/pdf/reference.md"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/check_bounding_boxes.py",
+          "target": "skills/pdf/scripts/check_bounding_boxes.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/check_fillable_fields.py",
+          "target": "skills/pdf/scripts/check_fillable_fields.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/convert_pdf_to_images.py",
+          "target": "skills/pdf/scripts/convert_pdf_to_images.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/create_validation_image.py",
+          "target": "skills/pdf/scripts/create_validation_image.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/extract_form_field_info.py",
+          "target": "skills/pdf/scripts/extract_form_field_info.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/extract_form_structure.py",
+          "target": "skills/pdf/scripts/extract_form_structure.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/fill_fillable_fields.py",
+          "target": "skills/pdf/scripts/fill_fillable_fields.py"
+        },
+        {
+          "path": "profiles/research/skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+          "target": "skills/pdf/scripts/fill_pdf_form_with_annotations.py"
+        }
+      ],
+      "dependencies": []
+    }
+  ]
+}

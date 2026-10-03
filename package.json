@@ -2,7 +2,7 @@
   "name": "ocx-profiles-registry",
   "private": true,
   "scripts": {
-    "build": "ocx build . --out dist && touch dist/.nojekyll",
+    "build": "for p in deploy dev general quant research; do ocx build registries/$p --out dist/$p || exit 1; done && touch dist/.nojekyll",
     "deploy": "bun run build"
   }
 }

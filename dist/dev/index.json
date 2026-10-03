@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "dev",
+      "type": "profile",
+      "description": "Programming/development profile: code review, database schema/migration (drizzle, neon, prisma), frontend/UI design, webapp testing, shadcn + chrome-devtools MCP, no-rm guard. Secrets from env vars."
+    }
+  ]
+}

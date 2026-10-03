@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "quant",
+      "type": "profile",
+      "description": "Data / quant profile: A-share market data, data acquisition & cleaning, statistics & causal inference, xlsx. Secrets from env vars."
+    }
+  ]
+}

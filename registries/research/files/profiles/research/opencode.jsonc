@@ -1,0 +1,144 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    {
+      "package": "opencode-snippets@latest",
+      "options": {
+        "globalDirectory": "{env:HOME}/.config/opencode2/snippet"
+      }
+    },
+    {
+      "package": "@azatakmyradov/opencode-mcp-toggle-plugin@latest"
+    },
+    {
+      "package": "@cardinal4/opencode-tavily-quota@latest"
+    },
+    {
+      "package": "opencode-blindfold@latest"
+    },
+    {
+      "package": "@tarquinen/opencode-dcp@latest"
+    },
+    "superpowers@git+https://github.com/obra/superpowers.git#v6.4.1",
+    "@bybrawe/opencode-loop@latest"
+  ],
+  "providers": {
+    "volcark": {
+      "package": "aisdk:@ai-sdk/openai-compatible",
+      "name": "volcengine",
+      "settings": {
+        "baseURL": "https://ark.cn-beijing.volces.com/api/v3",
+        "apiKey": "{env:ARK_API_KEY}"
+      },
+      "models": {
+        "deepseek-v4-flash-ga-260731": {
+          "name": "deepseek-v4-flash-ga-260731"
+        }
+      }
+    }
+  },
+  "lsp": {
+    "typescript": {
+      "disabled": true
+    },
+    "eslint": {
+      "disabled": true
+    }
+  },
+  "compaction": {
+    "auto": false
+  },
+  "mcp": {
+    "servers": {
+      "mcp-for-stata-wine": {
+        "type": "local",
+        "command": [
+          "{env:STATA_MCP_BIN}",
+          "server"
+        ],
+        "environment": {
+          "STATA_MCP__IS_WINE": "true",
+          "STATA_MCP__STATA_CLI": "{env:STATA_MCP_STATA_CLI}",
+          "STATA_MCP__WINE_PREFIX": "{env:STATA_MCP_WINE_PREFIX}",
+          "STATA_MCP__CWD": "{env:STATA_MCP_CWD}",
+          "STATA_MCP__ADDITIONAL_ALLOWED_DIRS": "/"
+        },
+        "disabled": false
+      },
+      "mineru": {
+        "type": "local",
+        "command": [
+          "uvx",
+          "mineru-open-mcp"
+        ],
+        "disabled": false,
+        "environment": {
+          "MINERU_API_TOKEN": "{env:MINERU_API_TOKEN}"
+        }
+      },
+      "openalex": {
+        "type": "local",
+        "command": [
+          "node",
+          "{env:OPENALEX_MCP_ENTRY}"
+        ],
+        "disabled": false,
+        "timeout": {
+          "catalog": 60000,
+          "execution": 60000
+        },
+        "environment": {
+          "OPENALEX_EMAIL": "{env:OPENALEX_EMAIL}",
+          "OPENALEX_API_KEY": "{env:OPENALEX_API_KEY}"
+        }
+      },
+      "mcp-for-zotero": {
+        "type": "remote",
+        "url": "https://mcpforzotero.alejandroarnaud.dev/mcp/",
+        "disabled": false,
+        "headers": {
+          "Authorization": "Bearer {env:ZOTERO_API_KEY}"
+        }
+      },
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp",
+        "disabled": false,
+        "headers": {
+          "CONTEXT7_API_KEY": "{env:CONTEXT7_API_KEY}"
+        }
+      },
+      "tavily": {"type":"remote","disabled":false,"url":"http://127.0.0.1:27890/mcp","headers":{"Authorization":"Bearer {env:TAVILY_API_KEY}"}}
+    }
+  },
+  "agents": {
+    "citation-verifier": {
+      "description": "Read-only reference verification: checks that each citation resolves to a real scholarly record via OpenAlex/Crossref and flags fabricated or mismatched references.",
+      "mode": "subagent",
+      "model": "deepseek/deepseek-v4-pro",
+      "system": "You verify academic references. Given a draft, a bibliography, or a list of citations, check each citation against real scholarly records and report which are real, which are mismatched, and which cannot be found.\n\nYou are read-only. You cannot edit files, run shell commands, or launch other agents. Your only output is your final report.\n\n## Method (for each citation)\n\nExtract the title, the first author's surname, the year, and the venue. Then:\n\n1. Query OpenAlex by title:\n   https://api.openalex.org/works?filter=title.search:<TITLE>&per-page=3&select=id,doi,title,publication_year,authorships,primary_location\n2. Cross-check with Crossref:\n   https://api.crossref.org/works?query.bibliographic=<TITLE%20AUTHOR%20YEAR>&rows=3&select=DOI,title,author,issued,container-title\n\nURL-encode every query value (replace spaces with %20). Fetch with webfetch; the body is JSON text you must read and compare. Never fabricate a DOI, an identifier, or a record.\n\n## Verdict rules\n\n- VERIFIED — a record whose title matches closely AND whose first-author surname matches AND whose year matches within +/-1. You MUST attach the record's DOI or OpenAlex ID and the evidence URL.\n- MISMATCH — the title resolves to a record, but the author or the year in the citation is wrong.\n- NOT_FOUND — no record with a closely matching title.\n- SUSPECT — partial or conflicting hits, a fetch failure, or anything you cannot resolve to exactly one record.\n\nHard rules:\n- No DOI/OpenAlex ID means NOT a pass. Never write VERIFIED without an identifier.\n- \"Looks similar\" is not a match. If you are not confident, use SUSPECT and state precisely what does not line up.\n- If a fetch fails or returns nothing usable, mark the citation SUSPECT and say the check failed.\n- For every non-VERIFIED row, name the discrepancy: what the citation claims vs what the record shows.\n\n## Output\n\nOne table, one row per citation:\n\n| # | short citation | status | matched record (DOI / OpenAlex ID) | evidence URL | discrepancy |\n\nThen: totals per status, and a list of any identifiers you could not resolve. If the input contains no identifiable citations, say so and stop.",
+      "permissions": [
+        {
+          "action": "shell",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "edit",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "subagent",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "question",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "quant",
+      "type": "profile",
+      "description": "Data / quant profile: A-share market data, data acquisition & cleaning, statistics & causal inference, xlsx. Secrets from env vars.",
+      "files": [
+        {
+          "path": "profiles/quant/AGENTS.md",
+          "target": "AGENTS.md"
+        },
+        {
+          "path": "profiles/quant/cli.json",
+          "target": "cli.json"
+        },
+        {
+          "path": "profiles/quant/ocx.jsonc",
+          "target": "ocx.jsonc"
+        },
+        {
+          "path": "profiles/quant/opencode.jsonc",
+          "target": "opencode.jsonc"
+        },
+        {
+          "path": "profiles/quant/plugins/no-rm.ts",
+          "target": "plugins/no-rm.ts"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/LICENSE.txt",
+          "target": "skills/xlsx/LICENSE.txt"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/SKILL.md",
+          "target": "skills/xlsx/SKILL.md"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/helpers/__init__.py",
+          "target": "skills/xlsx/scripts/office/helpers/__init__.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/helpers/pptx_chart.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_chart.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/helpers/pptx_slide.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_slide.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/helpers/pptx_theme.py",
+          "target": "skills/xlsx/scripts/office/helpers/pptx_theme.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/mce/mc.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/mce/mc.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-2010.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2010.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-2012.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2012.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-2018.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-2018.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-cex-2018.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-cid-2016.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "target": "skills/xlsx/scripts/office/schemas/microsoft/wml-symex-2015.xsd"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/soffice.py",
+          "target": "skills/xlsx/scripts/office/soffice.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validate.py",
+          "target": "skills/xlsx/scripts/office/validate.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validators/__init__.py",
+          "target": "skills/xlsx/scripts/office/validators/__init__.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validators/base.py",
+          "target": "skills/xlsx/scripts/office/validators/base.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validators/docx.py",
+          "target": "skills/xlsx/scripts/office/validators/docx.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validators/pptx.py",
+          "target": "skills/xlsx/scripts/office/validators/pptx.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/office/validators/redlining.py",
+          "target": "skills/xlsx/scripts/office/validators/redlining.py"
+        },
+        {
+          "path": "profiles/quant/skills/xlsx/scripts/recalc.py",
+          "target": "skills/xlsx/scripts/recalc.py"
+        }
+      ],
+      "dependencies": []
+    }
+  ]
+}

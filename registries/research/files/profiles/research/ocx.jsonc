@@ -1,0 +1,6 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/profile.json",
+  "registries": {},
+  "projectConfig": "inherit",
+  "bin": "opencode2"
+}

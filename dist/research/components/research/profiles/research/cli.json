@@ -1,0 +1,88 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "plugins": [
+    {
+      "package": "opencode-subagent-magazine@latest",
+      "options": {
+        "enabled": true
+      }
+    },
+    "-opencode.sidebar.context",
+    {
+      "package": "opencode-tui-usage@latest",
+      "options": {
+        "display": { "sidebarPosition": "top" }
+      }
+    },
+    {
+      "package": "opencode-snippets@latest",
+      "options": {
+        "globalDirectory": "{env:HOME}/.config/opencode2/snippet"
+      }
+    },
+    {
+      "package": "opencode-dir-tree-tui@latest",
+      "options": {
+        "hiddenDirs": [".*", "node_modules", "__pycache__", "*.pyc"]
+      }
+    },
+    {
+      "package": "opencode-vim@latest"
+    },
+    {
+      "package": "opencode-quick-links@latest"
+    },
+    {
+      "package": "opencode-quick-quote@latest"
+    },
+    {
+      "package": "@azatakmyradov/opencode-mcp-toggle-plugin@latest"
+    },
+    {
+      "package": "@cardinal4/opencode-tavily-quota@latest",
+      "options": {
+        "apiKey": "{env:TAVILY_API_KEY}",
+        "proxyUrl": "http://127.0.0.1:27890"
+      }
+    },
+    {
+      "package": "@mynameistito/opencode-force-input@latest"
+    },
+    {
+      "package": "opencode-blindfold@latest"
+    },
+    {
+      "package": "@tarquinen/opencode-dcp@latest"
+    },
+    {
+      "package": "opencode-plugin-usage@latest",
+      "options": {
+        "default": "deepseek",
+        "providers": {
+          "opencode-go": { "enabled": false },
+          "github-copilot": { "enabled": false },
+          "openai": { "enabled": false },
+          "openrouter": { "enabled": false },
+          "deepseek": { "enabled": true, "apiKey": "{env:DEEPSEEK_API_KEY}" }
+        }
+      }
+    },
+    {
+      "package": "@bybrawe/opencode-loop@latest"
+    }
+  ],
+  "theme": {
+    "name": "opencode"
+  },
+  "animations": true,
+  "prompt": {
+    "image_preview": false
+  },
+  "session": {
+    "scrollbar": true,
+    "tps": true
+  },
+  "diffs": {
+    "view": "auto"
+  }
+}

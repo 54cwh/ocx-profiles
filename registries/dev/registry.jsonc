@@ -1,0 +1,582 @@
+{
+  "$schema": "https://ocx.kdco.dev/schemas/v3/registry.json",
+  "name": "ocx-profiles",
+  "version": "1.0.0",
+  "author": "54cwh",
+  "opencode": "2.0.3",
+  "ocx": "3.0.0-alpha.1",
+  "components": [
+    {
+      "name": "dev",
+      "type": "profile",
+      "description": "Programming/development profile: code review, database schema/migration (drizzle, neon, prisma), frontend/UI design, webapp testing, shadcn + chrome-devtools MCP, no-rm guard. Secrets from env vars.",
+      "files": [
+        {
+          "path": "profiles/dev/AGENTS.md",
+          "target": "AGENTS.md"
+        },
+        {
+          "path": "profiles/dev/cli.json",
+          "target": "cli.json"
+        },
+        {
+          "path": "profiles/dev/ocx.jsonc",
+          "target": "ocx.jsonc"
+        },
+        {
+          "path": "profiles/dev/opencode.jsonc",
+          "target": "opencode.jsonc"
+        },
+        {
+          "path": "profiles/dev/plugins/no-rm.ts",
+          "target": "plugins/no-rm.ts"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/README.md",
+          "target": "skills/audit-website/README.md"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/SKILL.md",
+          "target": "skills/audit-website/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/agents/openai.yaml",
+          "target": "skills/audit-website/agents/openai.yaml"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/assets/icon-large.png",
+          "target": "skills/audit-website/assets/icon-large.png"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/assets/icon-small.svg",
+          "target": "skills/audit-website/assets/icon-small.svg"
+        },
+        {
+          "path": "profiles/dev/skills/audit-website/references/OUTPUT-FORMAT.md",
+          "target": "skills/audit-website/references/OUTPUT-FORMAT.md"
+        },
+        {
+          "path": "profiles/dev/skills/database-migration/SKILL.md",
+          "target": "skills/database-migration/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/database-schema-designer/README.md",
+          "target": "skills/database-schema-designer/README.md"
+        },
+        {
+          "path": "profiles/dev/skills/database-schema-designer/SKILL.md",
+          "target": "skills/database-schema-designer/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/database-schema-designer/assets/templates/migration-template.sql",
+          "target": "skills/database-schema-designer/assets/templates/migration-template.sql"
+        },
+        {
+          "path": "profiles/dev/skills/database-schema-designer/references/schema-design-checklist.md",
+          "target": "skills/database-schema-designer/references/schema-design-checklist.md"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/SKILL.md",
+          "target": "skills/drizzle-orm/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/metadata.json",
+          "target": "skills/drizzle-orm/metadata.json"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/references/advanced-schemas.md",
+          "target": "skills/drizzle-orm/references/advanced-schemas.md"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/references/performance.md",
+          "target": "skills/drizzle-orm/references/performance.md"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/references/query-patterns.md",
+          "target": "skills/drizzle-orm/references/query-patterns.md"
+        },
+        {
+          "path": "profiles/dev/skills/drizzle-orm/references/vs-prisma.md",
+          "target": "skills/drizzle-orm/references/vs-prisma.md"
+        },
+        {
+          "path": "profiles/dev/skills/frontend-design/LICENSE.txt",
+          "target": "skills/frontend-design/LICENSE.txt"
+        },
+        {
+          "path": "profiles/dev/skills/frontend-design/SKILL.md",
+          "target": "skills/frontend-design/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/neon-postgres/SKILL.md",
+          "target": "skills/neon-postgres/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/SKILL.md",
+          "target": "skills/prisma-database-setup/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/cockroachdb.md",
+          "target": "skills/prisma-database-setup/references/cockroachdb.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/mongodb.md",
+          "target": "skills/prisma-database-setup/references/mongodb.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/mysql.md",
+          "target": "skills/prisma-database-setup/references/mysql.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/postgresql.md",
+          "target": "skills/prisma-database-setup/references/postgresql.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/prisma-client-setup.md",
+          "target": "skills/prisma-database-setup/references/prisma-client-setup.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/prisma-postgres.md",
+          "target": "skills/prisma-database-setup/references/prisma-postgres.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/sqlite.md",
+          "target": "skills/prisma-database-setup/references/sqlite.md"
+        },
+        {
+          "path": "profiles/dev/skills/prisma-database-setup/references/sqlserver.md",
+          "target": "skills/prisma-database-setup/references/sqlserver.md"
+        },
+        {
+          "path": "profiles/dev/skills/squirrelscan/SKILL.md",
+          "target": "skills/squirrelscan/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/squirrelscan/agents/openai.yaml",
+          "target": "skills/squirrelscan/agents/openai.yaml"
+        },
+        {
+          "path": "profiles/dev/skills/squirrelscan/assets/icon-large.png",
+          "target": "skills/squirrelscan/assets/icon-large.png"
+        },
+        {
+          "path": "profiles/dev/skills/squirrelscan/assets/icon-small.svg",
+          "target": "skills/squirrelscan/assets/icon-small.svg"
+        },
+        {
+          "path": "profiles/dev/skills/squirrelscan/references/entity-map-fixes.md",
+          "target": "skills/squirrelscan/references/entity-map-fixes.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/AGENTS.md",
+          "target": "skills/vercel-composition-patterns/AGENTS.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/README.md",
+          "target": "skills/vercel-composition-patterns/README.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/SKILL.md",
+          "target": "skills/vercel-composition-patterns/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/metadata.json",
+          "target": "skills/vercel-composition-patterns/metadata.json"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/_sections.md",
+          "target": "skills/vercel-composition-patterns/rules/_sections.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/_template.md",
+          "target": "skills/vercel-composition-patterns/rules/_template.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md",
+          "target": "skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/architecture-compound-components.md",
+          "target": "skills/vercel-composition-patterns/rules/architecture-compound-components.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md",
+          "target": "skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md",
+          "target": "skills/vercel-composition-patterns/rules/patterns-explicit-variants.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/react19-no-forwardref.md",
+          "target": "skills/vercel-composition-patterns/rules/react19-no-forwardref.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/state-context-interface.md",
+          "target": "skills/vercel-composition-patterns/rules/state-context-interface.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/state-decouple-implementation.md",
+          "target": "skills/vercel-composition-patterns/rules/state-decouple-implementation.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-composition-patterns/rules/state-lift-state.md",
+          "target": "skills/vercel-composition-patterns/rules/state-lift-state.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/AGENTS.md",
+          "target": "skills/vercel-react-best-practices/AGENTS.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/README.md",
+          "target": "skills/vercel-react-best-practices/README.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/SKILL.md",
+          "target": "skills/vercel-react-best-practices/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/metadata.json",
+          "target": "skills/vercel-react-best-practices/metadata.json"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/_sections.md",
+          "target": "skills/vercel-react-best-practices/rules/_sections.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/_template.md",
+          "target": "skills/vercel-react-best-practices/rules/_template.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md",
+          "target": "skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md",
+          "target": "skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/advanced-init-once.md",
+          "target": "skills/vercel-react-best-practices/rules/advanced-init-once.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/advanced-use-latest.md",
+          "target": "skills/vercel-react-best-practices/rules/advanced-use-latest.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-api-routes.md",
+          "target": "skills/vercel-react-best-practices/rules/async-api-routes.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md",
+          "target": "skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-defer-await.md",
+          "target": "skills/vercel-react-best-practices/rules/async-defer-await.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-dependencies.md",
+          "target": "skills/vercel-react-best-practices/rules/async-dependencies.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-parallel.md",
+          "target": "skills/vercel-react-best-practices/rules/async-parallel.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md",
+          "target": "skills/vercel-react-best-practices/rules/async-suspense-boundaries.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-barrel-imports.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-conditional.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-conditional.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-defer-third-party.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/bundle-preload.md",
+          "target": "skills/vercel-react-best-practices/rules/bundle-preload.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/client-event-listeners.md",
+          "target": "skills/vercel-react-best-practices/rules/client-event-listeners.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/client-localstorage-schema.md",
+          "target": "skills/vercel-react-best-practices/rules/client-localstorage-schema.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md",
+          "target": "skills/vercel-react-best-practices/rules/client-passive-event-listeners.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/client-swr-dedup.md",
+          "target": "skills/vercel-react-best-practices/rules/client-swr-dedup.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-batch-dom-css.md",
+          "target": "skills/vercel-react-best-practices/rules/js-batch-dom-css.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-cache-function-results.md",
+          "target": "skills/vercel-react-best-practices/rules/js-cache-function-results.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-cache-property-access.md",
+          "target": "skills/vercel-react-best-practices/rules/js-cache-property-access.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-cache-storage.md",
+          "target": "skills/vercel-react-best-practices/rules/js-cache-storage.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-combine-iterations.md",
+          "target": "skills/vercel-react-best-practices/rules/js-combine-iterations.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-early-exit.md",
+          "target": "skills/vercel-react-best-practices/rules/js-early-exit.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-flatmap-filter.md",
+          "target": "skills/vercel-react-best-practices/rules/js-flatmap-filter.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-hoist-regexp.md",
+          "target": "skills/vercel-react-best-practices/rules/js-hoist-regexp.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-index-maps.md",
+          "target": "skills/vercel-react-best-practices/rules/js-index-maps.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-length-check-first.md",
+          "target": "skills/vercel-react-best-practices/rules/js-length-check-first.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-min-max-loop.md",
+          "target": "skills/vercel-react-best-practices/rules/js-min-max-loop.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-request-idle-callback.md",
+          "target": "skills/vercel-react-best-practices/rules/js-request-idle-callback.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-set-map-lookups.md",
+          "target": "skills/vercel-react-best-practices/rules/js-set-map-lookups.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md",
+          "target": "skills/vercel-react-best-practices/rules/js-tosorted-immutable.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-activity.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-activity.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-conditional-render.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-conditional-render.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-content-visibility.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-content-visibility.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-resource-hints.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-resource-hints.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-script-defer-async.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-svg-precision.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-svg-precision.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md",
+          "target": "skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-defer-reads.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-defer-reads.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-dependencies.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-dependencies.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-derived-state.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-derived-state.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-functional-setstate.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-memo.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-memo.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-no-inline-components.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-transitions.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-transitions.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md",
+          "target": "skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-after-nonblocking.md",
+          "target": "skills/vercel-react-best-practices/rules/server-after-nonblocking.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-auth-actions.md",
+          "target": "skills/vercel-react-best-practices/rules/server-auth-actions.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-cache-lru.md",
+          "target": "skills/vercel-react-best-practices/rules/server-cache-lru.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-cache-react.md",
+          "target": "skills/vercel-react-best-practices/rules/server-cache-react.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-dedup-props.md",
+          "target": "skills/vercel-react-best-practices/rules/server-dedup-props.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-hoist-static-io.md",
+          "target": "skills/vercel-react-best-practices/rules/server-hoist-static-io.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md",
+          "target": "skills/vercel-react-best-practices/rules/server-no-shared-module-state.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
+          "target": "skills/vercel-react-best-practices/rules/server-parallel-fetching.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md",
+          "target": "skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md"
+        },
+        {
+          "path": "profiles/dev/skills/vercel-react-best-practices/rules/server-serialization.md",
+          "target": "skills/vercel-react-best-practices/rules/server-serialization.md"
+        },
+        {
+          "path": "profiles/dev/skills/web-artifacts-builder/LICENSE.txt",
+          "target": "skills/web-artifacts-builder/LICENSE.txt"
+        },
+        {
+          "path": "profiles/dev/skills/web-artifacts-builder/SKILL.md",
+          "target": "skills/web-artifacts-builder/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/web-artifacts-builder/scripts/bundle-artifact.sh",
+          "target": "skills/web-artifacts-builder/scripts/bundle-artifact.sh"
+        },
+        {
+          "path": "profiles/dev/skills/web-artifacts-builder/scripts/init-artifact.sh",
+          "target": "skills/web-artifacts-builder/scripts/init-artifact.sh"
+        },
+        {
+          "path": "profiles/dev/skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
+          "target": "skills/web-artifacts-builder/scripts/shadcn-components.tar.gz"
+        },
+        {
+          "path": "profiles/dev/skills/web-design-guidelines/SKILL.md",
+          "target": "skills/web-design-guidelines/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/LICENSE.txt",
+          "target": "skills/webapp-testing/LICENSE.txt"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/SKILL.md",
+          "target": "skills/webapp-testing/SKILL.md"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/examples/console_logging.py",
+          "target": "skills/webapp-testing/examples/console_logging.py"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/examples/element_discovery.py",
+          "target": "skills/webapp-testing/examples/element_discovery.py"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/examples/static_html_automation.py",
+          "target": "skills/webapp-testing/examples/static_html_automation.py"
+        },
+        {
+          "path": "profiles/dev/skills/webapp-testing/scripts/with_server.py",
+          "target": "skills/webapp-testing/scripts/with_server.py"
+        }
+      ],
+      "dependencies": []
+    }
+  ]
+}

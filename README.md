@@ -1,49 +1,62 @@
 # ocx-profiles
 
-An [OCX](https://github.com/kdcokenny/ocx) registry with my `deploy` profile —
-a Linux server-operations setup for OpenCode V2.
+An [OCX](https://github.com/kdcokenny/ocx) registry collection for OpenCode V2.
+Each profile is published as its **own registry** (OCX requires one profile per
+registry — root files like `AGENTS.md`/`opencode.jsonc` collide otherwise),
+all served from this one GitHub Pages site under a subpath.
 
-## What's inside
+| Profile | Registry URL | What it is |
+|---|---|---|
+| `deploy` | `https://54cwh.github.io/ocx-profiles/deploy` | Linux server ops: ssh MCP, Docker, systemd, firewall, backups, cron, no-rm guard |
+| `dev` | `https://54cwh.github.io/ocx-profiles/dev` | Programming: code review, DB schema/migration, frontend/UI, webapp testing, shadcn + chrome-devtools MCP |
+| `general` | `https://54cwh.github.io/ocx-profiles/general` | Office / document productivity: docx/pptx/xlsx/pdf/latex2word, Obsidian, writing polish |
+| `quant` | `https://54cwh.github.io/ocx-profiles/quant` | Data / quant: A-share data, acquisition & cleaning, statistics & causal inference |
+| `research` | `https://54cwh.github.io/ocx-profiles/research` | Research / math modeling: literature, paper reading/writing/polishing, citation verify, Stata(Wine)/OpenAlex/Zotero/MinerU MCP |
 
-`deploy` is a portable profile (skills, instructions, plugin, native config):
-
-- **Skills**: backup-recovery, cron-doctor, docker-compose, docker-management,
-  firewall-config, linux-administration, ssh-configuration, ssh-mcp-helper,
-  systemd-services. (Several are MIT-licensed, sourced from
-  [BagelHole/DevOps-Security-Agent-Skills](https://github.com/BagelHole/DevOps-Security-Agent-Skills).)
-- **Plugin**: `no-rm` guard.
-- **Config**: OpenCode V2 config (`opencode.jsonc`), CLI config (`cli.json`),
-  AGENTS.md instructions.
+> `shop` is intentionally **not** published.
 
 ## Install
 
 ```sh
-ocx registry add <REGISTRY_URL> --name ocx-profiles --global
-ocx profile add deploy --source ocx-profiles/deploy
-ocx verify --profile deploy
-ocx oc -p deploy
+ocx registry add https://54cwh.github.io/ocx-profiles/<profile> --name ocx-<profile> --global
+ocx profile add <profile> --source ocx-<profile>/<profile>
+ocx verify --profile <profile>
+ocx oc -p <profile>
 ```
 
-## Required environment variables
+Example for `dev`:
 
-Secrets are **not** stored in this registry. Set these before launching:
+```sh
+ocx registry add https://54cwh.github.io/ocx-profiles/dev --name ocx-dev --global
+ocx profile add dev --source ocx-dev/dev
+```
 
-| Variable | Used by |
-|---|---|
-| `ARK_API_KEY` | `volcark` provider (Volcengine ARK) |
-| `TAVILY_API_KEY` | tavily MCP header + tavily-quota plugin |
-| `DEEPSEEK_API_KEY` | opencode-plugin-usage |
-| `CONTEXT7_API_KEY` | context7 MCP header |
+See [`INSTALL.zh.md`](./INSTALL.zh.md) for the Chinese walkthrough, required env
+vars, and the machine-specific bits you must edit after installing.
 
-The profile also expects an ssh MCP connection named `default`; configure it
-with the real host/user after installing.
+## Updating
+
+Publisher: edit `registries/<profile>/files/**`, then `bun run build`, commit,
+push. Consumer: `ocx update --all --profile <profile>` (add `--dry-run` first).
+Local edits are preserved; conflicts stop the update.
+
+## Layout
+
+```
+registries/<profile>/registry.jsonc   # one component, type "profile"
+registries/<profile>/files/profiles/<profile>/**   # the profile files
+dist/<profile>/**                     # built output, committed (CI cannot build; ocx@3 is not on npm)
+```
 
 ## Build
 
 ```sh
-ocx validate .
-ocx build . --out dist
+ocx validate registries/<profile>   # or the whole dir per profile
+bun run build                       # builds every registry into dist/<profile>
 ```
 
-Publish the full `dist/` directory as static files (GitHub Pages, Cloudflare,
-Vercel, Netlify). `.well-known/ocx.json` must be reachable at the exact path.
+Publish the whole `dist/` directory as static files. Each
+`dist/<profile>/.well-known/ocx.json` must be reachable at the exact path.
+
+Several skills are MIT-licensed, sourced from
+[BagelHole/DevOps-Security-Agent-Skills](https://github.com/BagelHole/DevOps-Security-Agent-Skills).
